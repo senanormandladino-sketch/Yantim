@@ -1,0 +1,127 @@
+
+.contenedor--detalle-modal {
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+.tabla--detalle {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  table-layout: auto;
+}
+
+.tabla--detalle thead {
+  position: sticky;
+  top: 0;
+  background-color: #F2B007;
+  z-index: 5;
+}
+
+.tabla--detalle th {
+  padding: 10px 12px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border: none;
+}
+
+.tabla--detalle .th--izquierda { text-align: left; }
+.tabla--detalle .th--centro { text-align: center; }
+.tabla--detalle .th--derecha { text-align: right; }
+
+.tabla--detalle tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  height: 50px;
+}
+
+.tabla--detalle tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tabla--detalle td {
+  padding: 8px 12px;
+  color: #334155;
+  white-space: normal;
+}
+
+.tabla--detalle .td--centro { text-align: center; }
+.tabla--detalle .td--derecha { text-align: right; }
+
+.tabla--detalle .td--producto-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img--detalle-producto {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.nombre--producto-detalle {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.td--subtotal {
+  font-weight: 600;
+}
+
+.contenedor--total-pedido {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 2px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label--total-pedido {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.monto--total-pedido {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #16a34a;
+}
+
+.mensaje--error-modal {
+  color: #ef4444;
+  text-align: center;
+  font-weight: 500;
+}
+
+.mensaje--vacio-modal {
+  text-align: center;
+  color: #64748b;
+  padding: 15px 0;
+}
+
+.contenedor--detalle-modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.contenedor--detalle-modal::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.contenedor--detalle-modal::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 10px;
+}
+
+.contenedor--detalle-modal::-webkit-scrollbar-thumb:hover {
+  background-color: #F2B007;
+}

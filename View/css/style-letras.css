@@ -1,0 +1,117 @@
+.h1--titulo {
+    margin: 5% 30% 0 30%;
+    font-size: 4rem;
+    text-shadow: 3px 3px 0 #F2B007;
+    z-index: 2;
+    color: #2E2E2E;
+}
+
+.boton--titulo {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #F2B007;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #C17A00;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.boton--titulo:hover {
+    background-color: #C17A00;
+    box-shadow: 5px 5px 0 #A05E00;
+}
+
+.a--titulo {
+    text-decoration: none;
+    z-index: 2;
+}
+
+.h2--catalogo {
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    color: #2E2E2E;
+    border-bottom: 3px solid #F2B007;
+}
+
+.contenedor--titulo-catalogo {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenedor--catalogo {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor--catalogo-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.contenedor--img {
+    background-color: #E5E5E5;
+    margin: 2rem;
+    display: flex;
+    justify-content: left;
+    border-radius: 12px;
+}
+
+.contenedor--img:hover {
+    box-shadow: none;
+    cursor: pointer;
+    transform: scale(0.98);
+}
+
+.img--herramientas {
+    padding: 1rem;
+}
+
+.img--pintura {
+    width: 80px;
+    height: 80px;
+}
+
+.h3--catalogo {
+    font-size: 1.5rem;
+    color: #F97316;
+    margin: auto 0;
+    text-transform: uppercase;
+}
+
+.h3--catalogo:hover {
+    text-decoration: underline;
+}
+
+.p--catalogo {
+    color: #000;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.palabra--resaltada {
+    color: #F2B007;
+    font-weight: bold;
+}
+
+.palabra--resaltada:hover {
+    text-decoration: underline;
+}
+
+.contenedor--herramientas {
+    width: 45%;
+}
+
+.lista--catalogo {
+    color: #F2B007;
+    padding-left: 2rem;
+}
+
+.a--catalogo {
+    text-decoration: none;
+    color: #F97316;
+}

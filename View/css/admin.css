@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+
+.contenedor--admin {
+  width: 95%;
+  max-width: 1400px;
+  margin: 40px auto 20px auto; 
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+}
+
+
+.encabezado--seccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.h1--titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  border-left: 5px solid #F2B007;
+  padding-left: 12px;
+}
+
+.boton--agregar {
+  background-color: #F2B007;
+  color: #000000;
+  padding: 10px 22px; 
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  box-shadow: 0 4px 0px #cf9604;
+  transition: transform 0.1s ease, background-color 0.2s;
+}
+
+.boton--agregar:hover {
+  background-color: #e0a206;
+}
+
+.boton--agregar:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0px #cf9604;
+}
+
+.contenedor--tabla {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  overflow-x: hidden; 
+  overflow-y: auto;
+  
+  max-height: 565px; 
+  transition: border-color 0.3s ease;
+  margin-top: 5px; 
+}
+
+.contenedor--tabla:hover {
+  border-color: #F2B007;
+}
+
+.tabla--admin {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.82rem;
+  table-layout: fixed; 
+}
+
+
+.tabla--admin thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tabla--admin thead tr {
+  background-color: #F2B007;
+  color: #000000;
+  height: 48px; 
+}
+
+.tabla--admin th {
+  padding: 10px 6px;
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.tabla--admin tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  height: 65px;
+  transition: background-color 0.2s ease;
+}
+
+.tabla--admin tbody tr:hover {
+  background-color: #fffbeb;
+}
+
+.tabla--admin td {
+  padding: 8px 6px;
+  text-align: center;
+  vertical-align: middle;
+  color: #334155;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tabla--admin th:nth-child(1), .tabla--admin td:nth-child(1) { width: 4%; }  
+.tabla--admin th:nth-child(2), .tabla--admin td:nth-child(2) { width: 11%; } 
+.tabla--admin th:nth-child(3), .tabla--admin td:nth-child(3) { width: 14%; } 
+.tabla--admin th:nth-child(4), .tabla--admin td:nth-child(4) { width: 16%; } 
+.tabla--admin th:nth-child(5), .tabla--admin td:nth-child(5) { width: 10%; } 
+.tabla--admin th:nth-child(6), .tabla--admin td:nth-child(6) { width: 12%; } 
+.tabla--admin th:nth-child(7), .tabla--admin td:nth-child(7) { width: 8%; }  
+.tabla--admin th:nth-child(8), .tabla--admin td:nth-child(8) { width: 9%; }  
+.tabla--admin th:nth-child(9), .tabla--admin td:nth-child(9) { width: 12%; } 
+.tabla--admin th:nth-child(10), .tabla--admin td:nth-child(10) { width: 12%; } 
+
+.img--producto--admin {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f8fafc;
+  padding: 2px;
+  border: 1px solid #e2e8f0;
+}
+
+.td--id {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.td--precio {
+  font-weight: 800;
+  color: #F2B007;
+  font-size: 0.95rem;
+}
+
+.badge--categoria {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.70rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge--stock {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.stock--bajo {
+  background-color: #fef2f2;
+  color: #ef4444;
+}
+
+.tipo--doc {
+  font-size: 0.70rem;
+  color: #64748b;
+  display: block;
+}
+
+.badge--rol {
+  display: inline-block;
+  padding: 4px 6px;
+  border-radius: 12px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.1;
+}
+
+.rol--cliente {
+  background-color: #e2e8f0;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.rol--admin {
+  background-color: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fcd34d;
+}
+
+.grupo--acciones {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px; 
+  justify-content: center;
+  align-items: center;
+}
+
+.boton--accion {
+  display: block;
+  width: 85px; 
+  padding: 4px 0;
+  border-radius: 12px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.boton--editar {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.boton--editar:hover {
+  background-color: #1e293b;
+}
+
+.boton--rol {
+  background-color: #F2B007;
+  color: #000000;
+}
+
+.boton--rol:hover {
+  background-color: #e0a206;
+}
+
+.boton--eliminar {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.boton--eliminar:hover {
+  background-color: #dc2626;
+}
+
+
+.grupo--superior {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+.input--buscador {
+  padding: 9px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  outline: none;
+  width: 260px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.input--buscador:focus {
+  border-color: #F2B007;
+  box-shadow: 0 0 8px rgba(242, 176, 7, 0.3);
+}
+
+
+.contenedor--tabla::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contenedor--tabla::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 0 16px 16px 0;
+}
+
+.contenedor--tabla::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 20px;
+  border: 2px solid #f1f5f9;
+  transition: background-color 0.3s ease;
+}
+
+.contenedor--tabla::-webkit-scrollbar-thumb:hover,
+.contenedor--tabla:hover::-webkit-scrollbar-thumb {
+  background-color: #F2B007;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow: auto;
+  }
+  
+  .contenedor--tabla {
+    overflow-x: auto;
+  }
+  
+  .encabezado--seccion {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .grupo--superior {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .input--buscador, .boton--agregar {
+    width: 100%;
+    text-align: center;
+  }
+}

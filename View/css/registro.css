@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url('../../Assets/Imagenes/fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.formulario-contenedor {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 40px 20px;
+  min-height: 100vh;
+}
+
+.contenedor__form {
+  position: relative;
+  z-index: 20;
+  background-color: #858c94;
+  border: 1px solid #6c757d;
+  padding: 35px 30px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 580px;   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.h2--form {
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+.grupo--input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.label--form {
+  color: #1a1a1a;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.input--form {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  font-size: 0.88rem;
+  font-weight: 500;
+  outline: none;
+  position: relative;
+  z-index: 30;
+  transition: all 0.2s ease;
+}
+
+.input--form:focus {
+  border-color: #F2B007;
+  box-shadow: 0 0 0 3px rgba(242, 176, 7, 0.4);
+}
+
+.select--form {
+  cursor: pointer;
+}
+
+.fila--doble {
+  display: flex;
+  gap: 14px;
+}
+
+.fila--doble .grupo--input {
+  flex: 1;
+}
+
+.grupo--botones {
+  margin-top: 10px;
+}
+
+.boton--form {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 30;
+  transition: transform 0.1s ease, background-color 0.2s;
+}
+
+.boton--guardar {
+  background-color: #F2B007;
+  color: #000000;
+  box-shadow: 0 4px 0px #c48e06;
+}
+
+.boton--guardar:hover {
+  background-color: #e0a206;
+}
+
+.boton--guardar:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0px #c48e06;
+}
+
+@media (max-width: 520px) {
+  .fila--doble {
+    flex-direction: column;
+    gap: 14px;
+  }
+}

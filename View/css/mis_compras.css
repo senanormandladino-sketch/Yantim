@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body.fondo {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.compras-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.compras-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.compras-header h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn-volver {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f2b007;     color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-volver:hover {
+    background-color: #d99c06;
+}
+
+.alert-success {
+    background-color: #dcfce7;
+    border: 1px solid #86efac;
+    color: #166534;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.buscador-container {
+    margin-bottom: 16px;
+}
+
+#inputBuscador {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#inputBuscador:focus {
+    border-color: #f2b007;
+    box-shadow: 0 0 0 3px rgba(242, 176, 7, 0.2);
+}
+
+.tabla-wrapper {
+    width: 100%;
+    max-height: 440px;     overflow-y: auto;
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+.tabla-wrapper::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.tabla-wrapper::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+.tabla-wrapper::-webkit-scrollbar-thumb {
+    background: #f2b007;
+    border-radius: 4px;
+}
+
+.tabla-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #d99c06;
+}
+
+.tabla-admin {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.tabla-admin thead tr {
+    background-color: #f2b007;     color: #000;
+    font-weight: 600;
+}
+
+.tabla-admin th {
+    padding: 14px 16px;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    text-transform: uppercase;
+    background-color: #f2b007;
+    color: #000;
+    z-index: 10;
+    border-bottom: 2px solid #f2b007; }
+
+.tabla-admin tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.15s ease;
+}
+
+.tabla-admin tbody tr:nth-child(even) {
+    background-color: #f8fafc; }
+
+.tabla-admin tbody tr:hover {
+    background-color: #fefce8; }
+
+.tabla-admin td {
+    padding: 12px 16px;
+    vertical-align: top;
+    color: #334155;
+}
+
+.col-id {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.col-fecha {
+    white-space: nowrap;
+    color: #64748b;
+}
+
+.col-productos {
+    max-width: 380px;
+}
+
+.lista-productos {
+    margin: 0;
+    padding-left: 18px;
+    list-style-type: disc;
+    color: #1e293b;
+    max-height: 80px;
+    overflow-y: auto;
+}
+
+.lista-productos li {
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.col-total {
+    font-weight: 700;
+    color: #d97706;     white-space: nowrap;
+}
+
+.badge-estado {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    background-color: #fef08a;     color: #854d0e;
+}
+
+.badge-estado.state-completado,
+.badge-estado.state-entregado {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.badge-estado.state-cancelado {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.tabla-vacia {
+    padding: 25px !important;
+    text-align: center;
+    color: #64748b;
+    font-weight: 600;
+}
+
+/* Contenedor y alineación del estado y botón */
+/* Centrar el contenido de la columna de estado */
+/* Centrado de la columna de estado */
+/* Centrado de la columna de estado */
+/* Centrado de la celda de estado */
+.col-estado {
+    vertical-align: middle;
+    text-align: left;
+}
+
+.contenedor-estado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.form-cancelar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Botón estilo cápsula redondeada (Pill) */
+.btn-cancelar-pedido {
+    background-color: #ef4444;
+    color: #ffffff;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 50px; /* Bordes completamente redondeados */
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-align: center;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.btn-cancelar-pedido:hover {
+    background-color: #dc2626;
+}
+
+.btn-cancelar-pedido:active {
+    transform: scale(0.96);
+}
